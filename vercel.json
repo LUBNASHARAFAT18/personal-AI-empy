@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "name": "personal-ai-employee",
+  "builds": [
+    {
+      "src": "vercel-api/**/*.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "vercel-api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ],
+  "env": {
+    "PYTHON_VERSION": "3.12"
+  },
+  "build": {
+    "env": {
+      "PIP_INSTALLER": "pip"
+    }
+  },
+  "outputDirectory": "public"
+}
