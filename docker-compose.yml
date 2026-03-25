@@ -1,0 +1,92 @@
+# Odoo Community Edition - Docker Compose Setup
+# Gold Tier - Personal AI Employee Hackathon
+#
+# This sets up Odoo Community (self-hosted) for accounting integration
+# Run: docker-compose up -d
+# Access: http://localhost:8069
+
+services:
+  # Odoo Community Edition
+  odoo:
+    image: odoo:17
+    container_name: ai_employee_odoo
+    restart: unless-stopped
+    ports:
+      - "8069:8069"  # Web interface
+    environment:
+      - ODOO_ADMIN_PASSWORD=admin
+      - ODOO_DB_HOST=db
+      - ODOO_DB_USER=postgres
+      - ODOO_DB_PASSWORD=odoo
+    volumes:
+      - odoo-web-data:/var/lib/odoo
+      - ./odoo/addons:/mnt/extra-addons
+      - ./odoo/logs:/var/log/odoo
+      - ./odoo/config:/etc/odoo
+    depends_on:
+      - db
+    networks:
+      - odoo_network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8069"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # PostgreSQL Database
+  db:
+    image: postgres:15
+    container_name: ai_employee_odoo_db
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD=odoo_password_change_me
+      - POSTGRES_DB=postgres
+    volumes:
+      - odoo-db-data:/var/lib/postgresql/data
+    networks:
+      - odoo_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U odoo"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # MCP Server for Odoo Integration
+  odoo-mcp:
+    build:
+      context: ./odoo-mcp
+      dockerfile: Dockerfile
+    container_name: ai_employee_odoo_mcp
+    restart: unless-stopped
+    environment:
+      - ODOO_URL=http://odoo:8069
+      - ODOO_DB=postgres
+      - ODOO_USER=admin
+      - ODOO_PASSWORD=admin_password_change_me
+      - MCP_PORT=8809
+    ports:
+      - "8809:8809"  # MCP server port
+    depends_on:
+      - odoo
+    networks:
+      - odoo_network
+    volumes:
+      - ./odoo-mcp/config:/app/config
+
+volumes:
+  odoo-web-data:
+    driver: local
+  odoo-db-data:
+    driver: local
+
+networks:
+  odoo_network:
+    driver: bridge
+
+# Security Notes:
+# 1. Change default passwords in production
+# 2. Use HTTPS reverse proxy (nginx/traefik)
+# 3. Restrict network access with firewall rules
+# 4. Regular backups of odoo-db-data volume
+# 5. Keep Odoo image updated

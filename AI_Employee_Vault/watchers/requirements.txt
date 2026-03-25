@@ -1,0 +1,25 @@
+# AI Employee - Python Dependencies
+# Bronze Tier - Minimum requirements
+
+# Core dependencies (Bronze tier)
+# No external dependencies required for file system watcher
+# Uses only Python standard library
+
+# Optional: For advanced watchers (Silver/Gold tier)
+# watchdog>=3.0.0       # File system events (alternative to polling)
+# google-api-python-client>=2.0.0  # Gmail API
+# google-auth-httplib2>=0.1.0      # Gmail authentication
+# google-auth-oauthlib>=1.0.0      # Gmail OAuth
+
+# Silver tier additions
+# playwright>=1.40.0    # WhatsApp Web automation
+# aiohttp>=3.9.0        # Async HTTP for API calls
+
+# Gold tier additions
+# requests>=2.31.0      # HTTP client for API integration
+# python-dotenv>=1.0.0  # Environment variable management
+
+# Development
+# pytest>=7.4.0         # Testing
+# black>=23.0.0         # Code formatting
+# flake8>=6.0.0         # Linting

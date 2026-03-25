@@ -1,0 +1,213 @@
+{
+  "main": {
+    "id": "2e530274bbc57960",
+    "type": "split",
+    "children": [
+      {
+        "id": "b6058ecce3d3470d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c00d6528ff8004d0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Plans/Plan_PaymentProcessing_2026-03-13_141821.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Plan_PaymentProcessing_2026-03-13_141821"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "17cf8aa011f211bd",
+    "type": "split",
+    "children": [
+      {
+        "id": "4a7fdf75abf41245",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a16b2dc715c110e7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "5a7025e6e55a3da0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "93f3fef762f0d89f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9099429592d6d934",
+    "type": "split",
+    "children": [
+      {
+        "id": "2741c53cc2beb7f9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aef69b88b0ccfa33",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Needs_Action/FILE_test_document_97468571_2026-03-06.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for FILE_test_document_97468571_2026-03-06"
+            }
+          },
+          {
+            "id": "d19bd2816fa74fd9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Needs_Action/FILE_test_document_97468571_2026-03-06.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from FILE_test_document_97468571_2026-03-06"
+            }
+          },
+          {
+            "id": "21d94864f33ba0e8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "273031b8f31409aa",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "80119cf31b97f0d4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Needs_Action/FILE_test_document_97468571_2026-03-06.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of FILE_test_document_97468571_2026-03-06"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "c00d6528ff8004d0",
+  "lastOpenFiles": [
+    "Plans/Plan_PaymentProcessing_2026-03-13_141416.md",
+    "Pending_Approval/APPROVAL_REQUIRED_payment_Payment_of_$250.0_to_Test_Clie_20260313_142124.md",
+    "Needs_Action/FILE_invoice_urgent_client_abc_4024337c_2026-03-13.md",
+    "Inbox/invoice_urgent_client_abc.pdf",
+    "Done/tasks.md.md",
+    "watchers/__pycache__/audit_logger.cpython-312.pyc",
+    "watchers/__pycache__/ralph_wiggum.cpython-312.pyc",
+    "watchers/__pycache__/facebook_instagram_watcher.cpython-312.pyc",
+    "GOLD_TIER_COMPLETE.md",
+    "Needs_Action/invoice_urgent_client_abc.pdf",
+    "Needs_Action/FILE_test_document_97468571_2026-03-13.md",
+    "Needs_Action/FILE_test_document_97468571_2026-03-06.md",
+    "Briefings/2026-03-23_Monday_Briefing.md",
+    "TEST_REPORT.md",
+    "SILVER_TIER_SUMMARY.md",
+    "Dashboard.md",
+    "Company_Handbook.md",
+    "Plans/Plan_PaymentProcessing_2026-03-13_141821.md",
+    "Inbox/tasks.md.md",
+    "Business_Goals.md",
+    "Needs_Action/test_document.txt",
+    "watchers/__pycache__/base_watcher.cpython-312.pyc",
+    "watchers/__pycache__",
+    "Inbox/test_document.txt"
+  ]
+}

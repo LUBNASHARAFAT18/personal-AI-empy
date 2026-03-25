@@ -1,0 +1,137 @@
+# Personal AI Employee - Git Ignore File
+# Protects secrets and excludes unnecessary files
+
+# ===========================================
+# CRITICAL: NEVER SYNC THESE (Security)
+# ===========================================
+.env
+*.env
+.env.local
+.env.production
+
+# OAuth Tokens
+token.json
+*.token
+tokens/
+
+# Credentials
+credentials.json
+*.credentials
+service_account.json
+
+# WhatsApp Session
+whatsapp_session/
+whatsapp/
+*.session
+
+# Banking Credentials
+banking_creds/
+banking/
+*.bank
+
+# Private Keys
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# ===========================================
+# Python
+# ===========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ===========================================
+# Docker
+# ===========================================
+*.log
+docker-compose.override.yml
+
+# ===========================================
+# Odoo
+# ===========================================
+odoo/addons/
+odoo/logs/
+odoo/config/
+
+# ===========================================
+# Logs
+# ===========================================
+Logs/
+logs/
+*.log
+health_*.json
+audit_*.json
+
+# ===========================================
+# OS Files
+# ===========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ===========================================
+# Obsidian (Optional - sync if you want)
+# ===========================================
+# .obsidian/
+# Uncomment if you want to sync Obsidian settings
+
+# ===========================================
+# Temporary Files
+# ===========================================
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+
+# ===========================================
+# Node Modules (for MCP servers)
+# ===========================================
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# ===========================================
+# Test Files
+# ===========================================
+test_*.txt
+test_*.md
+TEST_*.md

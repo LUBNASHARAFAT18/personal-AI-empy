@@ -1,0 +1,194 @@
+---
+last_updated: 2026-03-23T00:00:00Z
+status: active
+tier: gold
+---
+
+# 📊 AI Employee Dashboard
+
+> **Your life and business on autopilot. Local-first, agent-driven, human-in-the-loop.**
+
+**Tier:** Gold (Autonomous Employee) | **Version:** v0.3
+
+---
+
+## 🎯 Quick Stats
+
+| Metric | Value | Status |
+|--------|-------|--------|
+| **Pending Actions** | 0 | ✅ Clear |
+| **Awaiting Approval** | 0 | ✅ Clear |
+| **Tasks Completed Today** | 0 | - |
+| **Tasks Completed This Week** | 0 | - |
+| **Active Plans** | 0 | - |
+| **Scheduled Tasks** | 0 | - |
+
+---
+
+## 📥 Inbox Status
+
+| Folder | Count | Status |
+|--------|-------|--------|
+| **Inbox** | 0 | ✅ Clear |
+| **Needs Action** | 0 | ✅ Clear |
+| **In Progress** | 0 | ✅ Clear |
+| **Pending Approval** | 0 | ✅ Clear |
+| **Plans (Active)** | 0 | ✅ Clear |
+
+---
+
+## 💰 Financial Summary
+
+| Period | Revenue | Expenses | Net |
+|--------|---------|----------|-----|
+| **This Week** | $0 | $0 | $0 |
+| **This Month** | $0 | $0 | $0 |
+| **Outstanding Invoices** | $0 | - | - |
+
+---
+
+## 📋 Active Projects
+
+| Project | Status | Due Date | Progress |
+|---------|--------|----------|----------|
+| *No active projects* | - | - | - |
+
+---
+
+## 📅 Scheduled Tasks
+
+| Task | Schedule | Last Run | Next Run | Status |
+|------|----------|----------|----------|--------|
+| *No scheduled tasks* | - | - | - | - |
+
+**Configure Tasks:** Run `python watchers/task_scheduler.py --install --task <task-name> --time HH:MM`
+
+---
+
+## 📬 Watcher Status
+
+| Watcher | Type | Status | Last Check |
+|---------|------|--------|------------|
+| **File System** | Continuous | ⚪ Not Running | - |
+| **Gmail** | Continuous | ⚪ Not Running | - |
+| **WhatsApp** | Continuous | ⚪ Not Running | - |
+| **HITL Approval** | Continuous | ⚪ Not Running | - |
+
+**Start Watchers:**
+```bash
+# File System
+python watchers/filesystem_watcher.py AI_Employee_Vault
+
+# Gmail (requires OAuth2 setup)
+python watchers/gmail_watcher.py AI_Employee_Vault
+
+# WhatsApp (requires session setup)
+python watchers/whatsapp_watcher.py AI_Employee_Vault --setup-session
+
+# HITL Approval
+python watchers/hitl_approval.py AI_Employee_Vault --watch
+```
+
+---
+
+## 📝 Active Plans
+
+| Plan | Priority | Progress | Status | Next Step |
+|------|----------|----------|--------|-----------|
+| *No active plans* | - | - | - | - |
+
+---
+
+## 📢 Social Media Queue
+
+| Platform | Scheduled Posts | Last Post | Next Post |
+|----------|-----------------|-----------|-----------|
+| **LinkedIn** | 0 | - | - |
+
+---
+
+## ⏰ Recent Activity
+
+*No recent activity*
+
+---
+
+## 🚨 Alerts & Notifications
+
+- ✅ All systems operational
+- ✅ No pending approvals
+- ✅ No bottlenecks detected
+- ℹ️ Silver Tier features available: Gmail, WhatsApp, LinkedIn, Plans, Scheduling
+
+---
+
+## 📊 Weekly Metrics
+
+| Metric | Target | This Week | Status |
+|--------|--------|-----------|--------|
+| **Emails Processed** | 20+ | 0 | ⚪ |
+| **WhatsApp Messages** | 10+ | 0 | ⚪ |
+| **LinkedIn Posts** | 5+ | 0 | ⚪ |
+| **Tasks Completed** | 20+ | 0 | ⚪ |
+| **Response Time** | < 24h | - | ⚪ |
+
+---
+
+## 📝 Quick Notes
+
+```
+Add your notes here...
+```
+
+---
+
+## 🔗 Quick Links
+
+### Core Documents
+- [[Company_Handbook]] - Rules of engagement
+- [[Business_Goals]] - Objectives and metrics
+
+### Folders
+- [Inbox](./Inbox/) - Raw incoming items
+- [Needs_Action](./Needs_Action/) - Items requiring processing
+- [In_Progress](./In_Progress/) - Currently being processed
+- [Pending_Approval](./Pending_Approval/) - Awaiting your approval
+- [Approved](./Approved/) - Ready for execution
+- [Plans](./Plans/) - Task plans and workflows
+- [Done](./Done/) - Completed tasks
+- [Rejected](./Rejected/) - Rejected actions
+
+### Watchers
+- [watchers/filesystem_watcher.py](./watchers/filesystem_watcher.py) - File monitoring
+- [watchers/gmail_watcher.py](./watchers/gmail_watcher.py) - Gmail monitoring
+- [watchers/whatsapp_watcher.py](./watchers/whatsapp_watcher.py) - WhatsApp monitoring
+- [watchers/linkedin_poster.py](./watchers/linkedin_poster.py) - LinkedIn posting
+- [watchers/plan_generator.py](./watchers/plan_generator.py) - Plan creation
+- [watchers/hitl_approval.py](./watchers/hitl_approval.py) - Approval workflow
+- [watchers/task_scheduler.py](./watchers/task_scheduler.py) - Task scheduling
+
+---
+
+## 🛠️ Quick Commands
+
+```bash
+# Start all watchers (in separate terminals)
+python watchers/filesystem_watcher.py AI_Employee_Vault
+python watchers/gmail_watcher.py AI_Employee_Vault
+python watchers/whatsapp_watcher.py AI_Employee_Vault
+python watchers/hitl_approval.py AI_Employee_Vault --watch
+
+# Create a plan
+python watchers/plan_generator.py AI_Employee_Vault --analyze-needs-action
+
+# Schedule daily briefing
+python watchers/task_scheduler.py AI_Employee_Vault --install --task daily-briefing --time 08:00
+
+# Check approved actions
+python watchers/hitl_approval.py AI_Employee_Vault --check-approved
+```
+
+---
+
+*Last generated by AI Employee v0.2 (Silver Tier)*
+*Silver Tier Features: Gmail Watcher, WhatsApp Watcher, LinkedIn Poster, Plan Generator, HITL Approval, Task Scheduler*
